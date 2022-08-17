@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <form action="process.php" method="post">   
+        <h1>Formulario de Registro</h1>
+        <p><label for="nombre">Nombre: *</label>
+        <input type="text" id="nombre" name="nombre"></p>
+        
+        <p><label for="apellido">Apellido: *</label>
+        <input type="text" id="apellido" name="apellido"></p>
+        
+        <p><label for="email">Email: *</label>
+        <input type="text" id="email" name="email"></p>
+        
+        <p><label for="password">Contraseña: *</label>
+        <input type="password" id="password" name="password">
+        
+        <p><label for="pw_confirm">Confirmación de Contraseña: *</label>
+        <input type="password" id="pw_confirm" name="password_confirmacion"></p>
+        
+        <p><label for="cumpleanos">Cumpleanos:</label>
+        <input type="date" id="cumpleanos" name="cumpleanos"></p>
+        
+        <p>Genero con el que te identificas</p><br>
+        <label for="Hombre">Hombre</label>
+        <input type="radio" id="Hombre" name="genero" value="Hombre">
+        
+        <label for="Mujer">Mujer</label>
+        <input type="radio" id="Mujer" name="genero" value="Mujer">
+        
+        <label for="Nbinary">No binarie</label>
+        <input type="radio" id="Nbinary" name="genero" value="Nbinary">
+    
+        <label for="pf">Prefiero no responder</label>
+        <input type="radio" id="pf" name="genero" value="pf">
+    
+        <p>Una breve descripcion de ti</p>
+        <textarea name="description"></textarea>
+    
+        <p>Lenguaje Favorito
+        <select name="Lenguaje">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+        </select></p>
+
+        <div><input type="checkbox" name="offers" id="offers" checked >
+        <label for="offers">Me gustaría ecibir correos con ofertas.</label></div><br>
+        <input type="submit" value="Enviar" >
+    </form>
+</body>
+</html>
