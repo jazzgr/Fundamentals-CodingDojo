@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    background-color: lightblue;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.col{
+    flex: 1;
+    background-color: rgb(9, 9, 53);
+    color: white;
+    border: 1px solid black;
+    margin: 5px;
+}
+.col-2{
+    flex: 2;
+    background-color: lightgreen;
+    border: 1px solid black;
+    margin: 5px;
+}
+.col-3{
+    flex: 3;
+    background-color: lightsalmon;
+    border: 1px solid black;
+    margin: 5px;
+}
