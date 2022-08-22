@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign out</button></li>
+        </ul>
+    </div>  
+    <div class="main">
+        <div class="row-0"></div>
+        <div class="row-2">
+            <div class="perfil">
+                <div class="top">
+                    <img src="./images/user-circle.png" class="user"  alt="perfil">
+                </div>
+                <div class="cuerpo">
+                    <h1>Jane Done</h1>
+                    <p><img src="./icons/map-marker.png" class="logo-ubicacion" alt="ubicacion">Seattle</p>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p> Master of shadows and the Internet!</p>
+                    <a href="#"><img src="./icons/gear.png" class="logo-config" alt="config">edit profile</a>
+                </div>
+                
+            </div>
+            <div class="info">
+                <div class="top-black">
+                    <h4>Education</h4>
+                </div>
+                <div class="cuerpo-info" >
+                    <h3>Coding Dojo - Full Sack Bootcamp</h3>
+                    <p class="grey">Dec 2019 -Mar 2020</p>
+                    <p>Triple black belt in Python, Mern and C#</p>
+                </div>
+            </div>
+        </div>
+        <div class="row-0"></div>
+        <div class="row-1">
+            <div class="conection">
+                <div class="top-black">
+                    <h3>2</h3>
+                    <h4>Connection Request</h4>
+                </div>
+                <div class="cuerpo-conection">
+                    <div class="contenedor">
+                        <img src="./images/adrien-s.jpg"  class="users" alt="user">
+                        <p>Adrien S</p>
+                        <img src="./icons/accept-circle.png" class="icons" alt="accept">
+                        <img src="./icons/close-circle.png" class="icons" alt="close">
+                    </div>
+                    <div class="contenedor">
+                        <img src="./images/alayne-s.jpg"  class="users" alt="user">
+                        <p>Alayne S</p>
+                        <img src="./icons/accept-circle.png" class="icons" alt="accept">
+                        <img src="./icons/close-circle.png" class="icons" alt="close">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="your-conection">
+                <div class="top-black">
+                    <h3>500+</h3>
+                    <h4>Your Connections</h4>
+                </div>
+                <div class="contenedor2">
+                    <img src="./images/anne-s.jpg"  class="users" alt="user">
+                    <p>Anne S</p>
+                </div>
+                <div class="contenedor2">
+                    <img src="./images/arry-s.jpg"  class="users" alt="user">
+                    <p>Arry S</p>
+                </div>
+                <div class="contenedor2">
+                    <img src="./images/jane-m.jpg"  class="users" alt="user">
+                    <p>Jane S</p>
+                </div>
+                <span id="dots"></span>
+                <span id="more">
+                <div class="contenedor2">
+                    <img src="./images/phil-s.jpg"  class="users" alt="user">
+                    <p>Phill S</p>
+                </div>
+                <div class="contenedor2">
+                    <img src="./images/todd-s.jpg"  class="users" alt="user">
+                    <p>Phill S</p>
+                </div>
+                <div class="contenedor2">
+                    <img src="./images/user-circle.png"  class="users" alt="user">
+                    <p>Phill S</p>
+                </div>
+                </span>
+                <button class="btn-connection" onclick="myFunction()" id="myBtn">View more</button>
+                <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var btnText = document.getElementById("myBtn");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "View more"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "View less"; 
+                        moreText.style.display = "inline";
+                      }
+                    }
+                    </script>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    
+</body>
+</html>
